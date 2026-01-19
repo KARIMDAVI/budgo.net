@@ -1,27 +1,24 @@
+'use client';
 
+import { useEffect } from 'react';
 
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+}) {
+  useEffect(() => {
+    console.error(error);
+  }, [error]);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-This is a React component that displays an error message and a button to reset the application. The component takes two props: `error` and `reset`. The `error` prop is an object containing information about the error that occurred, including an optional `digest` property. The `reset` prop is a function that can be called to reset the application.
-The component uses the `useEffect` hook from React to log the error to the console whenever it changes. This is done by adding an effect that depends on the `error` prop and logs it using `console.error`.
-The component renders a div element with two child elements: an h2 heading with the text "Something went wrong!" and a button with the text "Try again". The button has an onClick handler that calls the `reset` function when clicked.
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center">
+      <div className="text-center">
+        <h2 className="mb-4 text-2xl font-bold">Something went wrong!</h2>
+        <button
+          onClick={() => reset()}
           className="rounded-md bg-primary px-4 py-2 text-white hover:bg-primary/90"
         >
           Try again

@@ -1,235 +1,214 @@
-# BudGo.Net - Enterprise iOS & Web Development
+<br /> <p align="center"> <a href="https://budgo.net"> <img src="./public/images/logo.png" alt="BudGo Logo" width="200" /> </a> <h3 align="center">Enterprise iOS & Web Development</h3> <p align="center"> Building secure, high-performance digital products with modern architecture. </p> <p align="center"> <img alt="Next.js" src="https://img.shields.io/badge/Next.js-14-black" /> <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-blue" /> <img alt="License" src="https://img.shields.io/badge/license-Proprietary-red" /> <img alt="Status" src="https://img.shields.io/badge/status-Production-success" /> </p> <p align="center"> <a href="https://budgo.net">View Website</a> · <a href="https://github.com/KARIMDAVI/budgo.net">GitHub</a> · <a href="mailto:sales@budgo.net">Contact</a> </p> </p> <p align="center"> BudGo.Net is a modern, production-ready enterprise website built with Next.js 14, TypeScript, and Tailwind CSS—designed for performance, security, and scalability. </p>
+✨ Features
+🎨 Design & UX
 
-A modern, production-ready company website built with Next.js 14, TypeScript, and Tailwind CSS. Featuring enterprise-grade architecture, animated backgrounds, and a unique diagonal slider management team showcase.
+Animated code background with syntax-highlighted particles
 
-## ✨ Features
+Glassmorphism UI with layered depth
 
-### Design & UX
-- 🎨 **Animated Code Background** - Dynamic particle system with syntax-highlighted code snippets
-- 🌓 **Light/Dark Theme** - System-aware theme with smooth transitions
-- 💎 **Glassmorphism Design** - Modern frosted glass effects throughout
-- 🎯 **Diagonal Slider UI** - Innovative skewed panel design for team presentation
-- 📱 **Fully Responsive** - Mobile-first design optimized for all devices
-- ♿ **WCAG 2.1 AA Compliant** - Full accessibility support
+Light / Dark mode (system aware)
 
-### Development
-- ⚡ **Enterprise Architecture** - Atomic design with src/ directory structure
-- 🔒 **Security First** - CSP headers, input sanitization, XSS protection
-- 🚀 **Performance Optimized** - Next.js Image, code splitting, lazy loading
-- 🎭 **Framer Motion** - Smooth animations with staggered transitions
-- 📊 **Portfolio System** - Enterprise-grade project showcase with metrics
-- 👥 **Team Management** - Dynamic team profiles with modal views
+Fully responsive, mobile-first design
 
-## 🛠️ Tech Stack
+Diagonal slider UI for management team showcase
 
-- **Framework**: Next.js 14.2+ (App Router)
-- **Language**: TypeScript 5+ (strict mode)
-- **Styling**: Tailwind CSS 3.4+
-- **Animations**: Framer Motion 11+
-- **Icons**: Lucide React
-- **Fonts**: Inter, Dancing Script (Google Fonts)
-- **Image Optimization**: Next.js Image with WebP/AVIF
+WCAG 2.1 AA accessibility compliance
 
-## 🚀 Getting Started
+🚀 Development & Architecture
 
-### Prerequisites
+Enterprise-grade architecture (Atomic Design)
 
-- Node.js 18+ 
-- npm or yarn
-- Git
+Next.js App Router (14.2+)
 
-### Installation
+Framer Motion animations with staggered transitions
 
-1. Clone the repository:
-```bash
+Portfolio system with metrics and filtering
+
+Dynamic team profiles with modal views
+
+CLI-style contact interface
+
+🔒 Security & Performance
+
+CSP and secure HTTP headers
+
+XSS, CSRF, and input sanitization
+
+Next.js Image optimization (WebP / AVIF)
+
+Automatic code splitting & lazy loading
+
+Strict TypeScript mode
+
+Environment-safe configuration
+
+🛠️ Tech Stack
+Stack	-	-	-	-	-
+Frontend	<p align="center">Next.js 14</p>	<p align="center">TypeScript 5+</p>	<p align="center">Tailwind CSS</p>	<p align="center">Framer Motion</p>	<p align="center">Lucide Icons</p>
+Platform	<p align="center">App Router</p>	<p align="center">Edge Ready</p>	<p align="center">Static & SSR</p>	<p align="center">Image Optimization</p>	<p align="center">SEO-Ready</p>
+🚀 Quick Start
+
+Run the project locally.
+
+Step 1: Clone the repository
 git clone https://github.com/KARIMDAVI/budgo.net.git
 cd budgo.net
-```
 
-2. Install dependencies:
-```bash
+Step 2: Install dependencies
 npm install
-```
 
-3. Set up environment variables:
-```bash
+Step 3: Setup environment variables
 cp .env.local.example .env.local
-```
 
-4. Configure `.env.local`:
-```env
+
+Update .env.local with valid values:
+
 NEXT_PUBLIC_SITE_URL=https://budgo.net
 NEXT_PUBLIC_EMAIL_SERVICE_ID=your_service_id
 NEXT_PUBLIC_EMAIL_TEMPLATE_ID=your_template_id
 NEXT_PUBLIC_EMAIL_PUBLIC_KEY=your_public_key
-```
 
-5. Run the development server:
-```bash
+Step 4: Start development server
 npm run dev
-```
 
-6. Open [http://localhost:3000](http://localhost:3000)
 
-### Build for Production
+Open http://localhost:3000
 
-```bash
+🏗️ Build for Production
 npm run build
 npm start
-```
 
-### Available Scripts
+Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run type-check` - Run TypeScript compiler check
+npm run dev – Development server
 
-## 📁 Project Structure
+npm run build – Production build
 
-```
+npm start – Production server
+
+npm run lint – ESLint
+
+npm run type-check – TypeScript validation
+
+📂 Project Structure
 budgo-net/
-├── src/                      # Source code
-│   ├── app/                  # Next.js App Router
-│   │   ├── layout.tsx        # Root layout with BackgroundLayer
-│   │   ├── page.tsx          # Homepage with terminal interface
-│   │   ├── (marketing)/      # Marketing pages group
-│   │   │   ├── about/        # About page
-│   │   │   ├── company/      # Company pages
-│   │   │   │   ├── management/    # Team with diagonal slider
-│   │   │   │   └── history/       # Company history timeline
-│   │   │   ├── contact/      # Contact page with CLI interface
-│   │   │   ├── portfolio/    # Project showcase with filters
-│   │   │   └── what-we-do/   # Services page
-│   │   └── api/              # API routes
-│   │       └── contact/      # Contact form endpoint
-│   ├── components/           # React components (Atomic Design)
-│   │   ├── atoms/            # Basic building blocks
-│   │   ├── molecules/        # Simple component groups
-│   │   ├── organisms/        # Complex components
-│   │   ├── sections/         # Page sections
-│   │   ├── templates/        # Page templates
-│   │   ├── layout/           # Layout components
-│   │   │   ├── BackgroundLayer.tsx
-│   │   │   ├── Navigation.tsx
-│   │   │   └── ThemeProvider.tsx
-│   │   ├── ui/               # UI components
-│   │   └── code-background/  # Animated code background
-│   ├── lib/                  # Utilities
-│   │   ├── color-system.ts   # Design system colors
-│   │   ├── portfolio-data.ts # Portfolio projects
-│   │   ├── team-data.ts      # Team information
-│   │   └── utils.ts          # Helper functions
-│   ├── hooks/                # Custom React hooks
-│   ├── config/               # Configuration
-│   ├── styles/               # Global styles
-│   │   └── globals.css
-│   ├── tests/                # Test files
-│   └── types/                # TypeScript types
-├── public/                   # Static assets
-│   ├── images/               # Optimized images
-│   │   ├── team/             # Team member photos
-│   │   └── portfolio/        # Project screenshots
-│   ├── assets/               # Other static files
-│   └── robots.txt
-├── Assets/                   # Background images
-└── ...config files           # Next.js, TypeScript, Tailwind configs
-```
+├── src/
+│   ├── app/                # Next.js App Router
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── (marketing)/
+│   │   │   ├── about/
+│   │   │   ├── company/
+│   │   │   │   ├── management/
+│   │   │   │   └── history/
+│   │   │   ├── portfolio/
+│   │   │   ├── what-we-do/
+│   │   │   └── contact/
+│   │   └── api/contact/
+│   ├── components/         # Atomic Design system
+│   ├── hooks/
+│   ├── lib/
+│   ├── styles/
+│   ├── tests/
+│   └── types/
+├── public/
+│   ├── images/
+│   └── assets/
+└── config files
 
-## 🎨 Key Pages
+🎯 Key Pages
 
-- **/** - Homepage with animated terminal interface
-- **/about** - Company overview and values
-- **/company/management** - Team profiles with diagonal slider UI
-- **/company/history** - Interactive timeline
-- **/portfolio** - Project showcase with filtering
-- **/what-we-do** - Services and capabilities
-- **/contact** - CLI-style contact form
+/ – Homepage with animated terminal interface
 
-## 🔒 Security Features
+/about – Company overview
 
-- Content Security Policy (CSP) headers
-- Secure HTTP headers (HSTS, X-Frame-Options, X-Content-Type-Options)
-- Input sanitization and validation
-- XSS protection
-- CSRF protection for forms
-- No inline scripts or styles
-- Secure environment variable handling
+/company/management – Diagonal team slider
 
-## ⚡ Performance Optimizations
+/company/history – Interactive timeline
 
-- Next.js Image component with WebP/AVIF support
-- Automatic code splitting and lazy loading
-- Font optimization with `display: swap`
-- Minified CSS and JavaScript
-- Tree shaking for smaller bundle sizes
-- Static generation where possible
-- Image optimization and responsive srcsets
-- Preconnect to external domains
+/portfolio – Filterable project showcase
 
-## ♿ Accessibility
+/what-we-do – Services & capabilities
 
-- Semantic HTML5 elements
-- Comprehensive ARIA labels and roles
-- Full keyboard navigation support
-- Focus indicators on all interactive elements
-- Reduced motion support (`prefers-reduced-motion`)
-- Screen reader friendly
-- Color contrast WCAG AA compliant
-- Skip-to-content links
+/contact – CLI-style contact form
 
-## 🎯 Design System
+♿ Accessibility
 
-### Colors (Deep Focus Theme)
-- **Primary**: Sky Blue `#38BDF8` - Trust & Logic
-- **Secondary**: Teal `#2DD4BF` - Success & Growth  
-- **Accent**: Indigo `#818CF8` - Creativity
-- **Background**: Deep Slate `#0A0E1A` - The Void
-- **Surface**: Slate `#1A1F35` - Elevated layers
+Semantic HTML5
 
-### Animations
-- **Fluid Entrance**: `cubic-bezier(0.25, 1, 0.5, 1)` - Modals, page loads
-- **Snap Focus**: `cubic-bezier(0.19, 1, 0.22, 1)` - Hover states
-- **Organic Pulse**: `cubic-bezier(0.34, 1.56, 0.64, 1)` - Notifications
+ARIA labels and landmarks
 
-## 🌐 Browser Support
+Full keyboard navigation
 
-- Chrome/Edge 90+
-- Firefox 88+
-- Safari 14+
-- Mobile browsers (iOS Safari, Chrome Mobile)
+Reduced-motion support
 
-## 📚 Documentation
+WCAG AA color contrast
 
-- [Color System Guide](./COLOR_SYSTEM_GUIDE.md)
-- [Implementation Summary](./IMPLEMENTATION_SUMMARY.md)
-- [Portfolio Enhancement](./PORTFOLIO_ENHANCEMENT_COMPLETE.md)
-- [Project Structure](./PROJECT_STRUCTURE.md)
-- [Deployment Guide](./DEPLOYMENT_GUIDE.md)
+Screen-reader optimized
 
-## 🤝 Contributing
+🔐 Security Highlights
 
-This is a private company project. For internal contributions:
+Strict CSP headers
 
-1. Pull latest changes from main
-2. Make your changes
-3. Test thoroughly (`npm run build` and `npm run lint`)
-4. Commit to main (we don't use feature branches)
-5. Push to origin
+No inline scripts or styles
 
-## 📄 License
+Secure environment handling
 
-Copyright © 2024-2026 BudGo LLC. All rights reserved.
+XSS & CSRF protection
 
-## 🔗 Links
+Input validation & sanitization
 
-- **Website**: [https://budgo.net](https://budgo.net)
-- **GitHub**: [https://github.com/KARIMDAVI/budgo.net](https://github.com/KARIMDAVI/budgo.net)
-- **Email**: sales@budgo.net
+HSTS & security headers
 
----
+🌐 Browser Support
 
-Built with ❤️ by the BudGo team
+Chrome / Edge 90+
 
+Firefox 88+
 
+Safari 14+
+
+iOS Safari & Android Chrome
+
+📚 Documentation
+
+Color System Guide
+
+Deployment Guide
+
+Project Structure Overview
+
+Portfolio Enhancements
+
+Implementation Summary
+
+🤝 Contributing
+
+This is a private enterprise project.
+
+Internal workflow:
+
+Pull latest main
+
+Make changes
+
+Test (npm run build, npm run lint)
+
+Commit directly to main
+
+Push to origin
+
+📄 License
+
+© 2024–2026 BudGo LLC
+All rights reserved.
+
+🔗 Links
+
+🌐 Website: https://budgo.net
+
+💻 GitHub: https://github.com/KARIMDAVI/budgo.net
+
+📧 Email: sales@budgo.net
+
+Made with ❤️, TypeScript, and Next.js by the BudGo Team
